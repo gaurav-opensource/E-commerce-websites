@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechRahul Deals - Best Amazon Gadgets</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: #121212;
+            color: #ffffff;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(90deg, #1e3c72, #2a5298);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #00ffcc;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #00ffcc;
+        }
+
+        .nav {
+            margin-top: 15px;
+        }
+
+        .nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #00ffcc;
+            text-shadow: 0 0 5px #00ffcc;
+        }
+
+        /* Search Bar */
+        .search {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .search input {
+            width: 60%;
+            max-width: 400px;
+            padding: 12px;
+            font-size: 1em;
+            border: 2px solid #00ffcc;
+            border-radius: 25px;
+            background: #1e1e1e;
+            color: #ffffff;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .search input:focus {
+            border-color: #ff4081;
+            box-shadow: 0 0 8px #ff4081;
+        }
+
+        /* Products Section */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product {
+            background: #1e1e1e;
+            border-radius: 10px;
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: 1px solid #00ffcc;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px #00ffcc;
+        }
+
+        .product img {
+            width: 70%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product h3 {
+            font-size: 1.3em;
+            margin: 10px 0;
+            color: #00ffcc;
+        }
+
+        .product p {
+            font-size: 1em;
+            color: #cccccc;
+            margin-bottom: 10px;
+        }
+
+        .product a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff4081;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: background 0.3s;
+        }
+
+        .product a:hover {
+            background: #e91e63;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+            border-top: 2px solid #00ffcc;
+        }
+
+        .footer p {
+            font-size: 0.9em;
+            color: #cccccc;
+        }
+
+        .footer a {
+            color: #00ffcc;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .search input {
+                width: 80%;
+            }
+
+            .nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>TechRahul Deals</h1>
+        <p>Best Amazon Gadgets for AI Videos, YouTube Shorts & Optical Illusions</p>
+        <div class="nav">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="https://youtube.com/@YourChannelName">YouTube</a>
+            <a href="https://instagram.com/YourInstagram">Instagram</a>
+        </div>
+    </div>
+
+    <div class="search">
+        <input type="text" id="searchBar" placeholder="Search for gadgets..." onkeyup="searchProducts()">
+    </div>
+
+    <div class="products" id="productList">
+        <div class="product">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTCpU-xmRV02LaPqrY6hGJ-daMpva15KuR4CuXLo-UWuMNWTnLvPnlZiv627SMxleiXfp7DPHljz1oCani5l0Dsoq4W3tr5pUKY-BW1kEIgmsSL3VGQnYpnhA" alt="Boya BYM1">
+            <h3>Boya BYM1 Microphone</h3>
+            <p>Price: ₹1000</p>
+            <a href="[Your Affiliate Link]" target="_blank">Buy Now on Amazon</a>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300x200?text=Filmora" alt="Filmora">
+            <h3>Filmora Software</h3>
+            <p>Price: ₹5000</p>
+            <a href="[Your Affiliate Link]" target="_blank">Buy Now on Amazon</a>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300x200?text=GoPro+Hero" alt="GoPro Hero">
+            <h3>GoPro Hero Camera</h3>
+            <p>Price: ₹10000</p>
+            <a href="[Your Affiliate Link]" target="_blank">Buy Now on Amazon</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>*As an Amazon Associate, I earn from qualifying purchases.</p>
+        <p>
+            <a href="https://youtube.com/@YourChannelName">YouTube</a> |
+            <a href="https://instagram.com/YourInstagram">Instagram</a> |
+            <a href="https://x.com/YourXHandle">X</a>
+        </p>
+    </div>
+
+    <script>
+        function searchProducts() {
+            let input = document.getElementById('searchBar').value.toLowerCase();
+            let products = document.getElementsByClassName('product');
+
+            for (let i = 0; i < products.length; i++) {
+                let title = products[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+                if (title.includes(input)) {
+                    products[i].style.display = '';
+                } else {
+                    products[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</body>
+</html>
